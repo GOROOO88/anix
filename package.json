@@ -11,7 +11,7 @@
     "lint": "next lint",
     "build:cf": "opennextjs-cloudflare build",
     "preview:cf": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy:preview": "opennextjs-cloudflare build && opennextjs-cloudflare deploy --config wrangler.preview.jsonc"
+    "deploy:preview": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "dependencies": {
     "apexcharts": "^3.52.0",
