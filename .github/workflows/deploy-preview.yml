@@ -29,6 +29,8 @@ jobs:
 
       - name: Build for Cloudflare
         run: npm run build:cf
+        env:
+          NEXT_PUBLIC_API_URL: /anix/api/proxy
 
       - name: Verify Cloudflare credentials
         run: |
