@@ -2,6 +2,9 @@ name: Deploy AniX preview to Cloudflare
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - V3-next15-upgrade
 
 permissions:
   contents: read
