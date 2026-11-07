@@ -30,10 +30,10 @@ export async function generateMetadata(
 
   return {
     title:"Закладки Пользователя - " + data.profile.login + " - " + SectionTitleMapping[slug],
-    description: "Закладки Пользователя - " + data.profile.login + " - " + SectionTitleMapping[params.slug],
+    description: "Закладки Пользователя - " + data.profile.login + " - " + SectionTitleMapping[slug],
     openGraph: {
       ...previousOG,
-      url: `${process.env.METADATA_BASE_URL || "https://example.com"}/profile/${id}/bookmarks/${params.slug}`,
+      url: `${process.env.METADATA_BASE_URL || "https://example.com"}/profile/${id}/bookmarks/${slug}`,
       images: [],
     },
   };
