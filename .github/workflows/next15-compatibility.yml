@@ -31,8 +31,8 @@ jobs:
       - name: Install locked dependencies
         run: npm ci
 
-      - name: Build application
-        run: npm run build
+      - name: Build application for Cloudflare Workers
+        run: npm run build:cf
 
       - name: Commit updated lockfile
         run: |
